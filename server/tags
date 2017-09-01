@@ -1,0 +1,447 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+ARM_FILE_H_	base/ArmFile.h	2;"	d
+ActionMotion	base/CommandObject.cpp	/^    ActionMotion::ActionMotion(int sender_id) : CommandObject(sender_id, 0x04)$/;"	f	class:android::ActionMotion
+ActionMotion	base/CommandObject.h	/^    class ActionMotion : public CommandObject$/;"	c	namespace:android
+AdbForwardService	service/AdbForwardService.cpp	/^    AdbForwardService::AdbForwardService()$/;"	f	class:android::AdbForwardService
+AdbForwardService	service/AdbForwardService.h	/^    class AdbForwardService$/;"	c	namespace:android
+AdbForwardService_H__	service/AdbForwardService.h	5;"	d
+AllArmMotor	base/DeviceTable.cpp	/^	static const unsigned char AllArmMotor[] = $/;"	v	file:
+AllMotor	base/DeviceTable.cpp	/^    static const unsigned char AllMotor[] = $/;"	v	file:
+AllSensor	base/DeviceTable.cpp	/^    static const unsigned char AllSensor[] = $/;"	v	file:
+ArmFile	base/ArmFile.h	/^class ArmFile$/;"	c
+BinaryReader	base/ArmFile.cpp	/^        BinaryReader()$/;"	f	class:BinaryReader
+BinaryReader	base/ArmFile.cpp	/^class BinaryReader$/;"	c	file:
+Blocked	base/CommandObject.cpp	/^    bool CommandObject::Blocked(const CommandObject * obj)$/;"	f	class:android::CommandObject
+BodyPartTable	base/DeviceTable.cpp	/^    } BodyPartTable[] =$/;"	v	typeref:struct:DeviceTable::BodyParts_	file:
+BodyParts_	base/DeviceTable.cpp	/^    static const struct BodyParts_$/;"	s	namespace:DeviceTable	file:
+ByteCompare	base/ArmFile.cpp	/^static bool ByteCompare(byte * bytes1, byte * bytes2, int len)$/;"	f	file:
+CANSession	CANSession.cpp	/^    CANSession::CANSession()$/;"	f	class:android::CANSession
+CANSession	CANSession.h	/^    class CANSession : public RmCANReceiver$/;"	c	namespace:android
+CANSession_H_	CANSession.h	2;"	d
+Clear	base/CommandObject.cpp	/^    void MotorMotion::Clear()$/;"	f	class:android::MotorMotion
+Clear	base/CommandObject.cpp	/^    void SettingObject::Clear()$/;"	f	class:android::SettingObject
+Close	base/ArmFile.cpp	/^        void Close()$/;"	f	class:BinaryReader
+CommandObject	base/CommandObject.cpp	/^    CommandObject::CommandObject(int sender_id, int cls_id)$/;"	f	class:android::CommandObject
+CommandObject	base/CommandObject.h	/^    class CommandObject$/;"	c	namespace:android
+CommandObject_H_	base/CommandObject.h	2;"	d
+CompleteTask	CANSession.cpp	/^    void CANSession::CompleteTask(const unsigned char *streams, int len)$/;"	f	class:android::CANSession
+ControllerObject	base/ControllerObject.cpp	/^    ControllerObject::ControllerObject(int sender_id) : CommandObject(sender_id, 0x1000)$/;"	f	class:android::ControllerObject
+ControllerObject	base/ControllerObject.h	/^    class ControllerObject : public CommandObject$/;"	c	namespace:android
+ControllerObject_H_	base/ControllerObject.h	2;"	d
+CurrentPosition	base/ArmFile.cpp	/^        long CurrentPosition()$/;"	f	class:BinaryReader
+DEVICE_TABLE_H_	base/DeviceTable.h	2;"	d
+Destroy	RDSTask.cpp	/^    void RDSTask::Destroy()$/;"	f	class:android::RDSTask
+DeviceTable	base/DeviceTable.cpp	/^namespace DeviceTable$/;"	n	file:
+DeviceTable	base/DeviceTable.h	/^namespace DeviceTable$/;"	n
+EmojiMotion	base/CommandObject.cpp	/^    EmojiMotion::EmojiMotion(int sender_id) : CommandObject(sender_id, 0x0A)$/;"	f	class:android::EmojiMotion
+EmojiMotion	base/CommandObject.h	/^    class EmojiMotion : public CommandObject$/;"	c	namespace:android
+EmojiTable	base/DeviceTable.cpp	/^    } EmojiTable[] =$/;"	v	typeref:struct:DeviceTable::EmojiTable_	file:
+EmojiTable_	base/DeviceTable.cpp	/^    static const struct EmojiTable_$/;"	s	namespace:DeviceTable	file:
+Equal	base/CommandObject.cpp	/^    bool CommandObject::Equal(const CommandObject * chr)$/;"	f	class:android::CommandObject
+Equal	base/CommandObject.cpp	/^    bool MotorMotion::Equal(const CommandObject * co)$/;"	f	class:android::MotorMotion
+Equal	base/CommandObject.cpp	/^    bool SettingObject::Equal(const CommandObject * obj)$/;"	f	class:android::SettingObject
+Equal	base/ControllerObject.cpp	/^    bool ControllerObject::Equal(const CommandObject * co)$/;"	f	class:android::ControllerObject
+Finish	base/CommandObject.cpp	/^    int CommandObject::Finish(int result, int errorcode)$/;"	f	class:android::CommandObject
+Finish	base/CommandObject.cpp	/^    int SettingObject::Finish(int result, int errorcode)$/;"	f	class:android::SettingObject
+Frame	base/MotionFrames.h	/^            Frame(int duration)$/;"	f	class:MotionFrames::Frame
+Frame	base/MotionFrames.h	/^    class Frame$/;"	c	class:MotionFrames
+IFrameListener	base/IFrameListener.h	/^class IFrameListener$/;"	c
+IFrameListener_H_	base/IFrameListener.h	2;"	d
+Instance	CANSession.cpp	/^    CANSession * CANSession::Instance()$/;"	f	class:android::CANSession
+Instance	RDSTask.cpp	/^    RDSTask * RDSTask::Instance()$/;"	f	class:android::RDSTask
+Instance	RDService.cpp	/^    RDService * RDService::Instance()$/;"	f	class:android::RDService
+LOCAL_CFLAGS	Android.mk	/^LOCAL_CFLAGS := -O2 -Wall -g -Wunused-parameter$/;"	m
+LOCAL_C_INCLUDES	Android.mk	/^LOCAL_C_INCLUDES := \\$/;"	m
+LOCAL_MODULE	Android.mk	/^LOCAL_MODULE:= irds $/;"	m
+LOCAL_MODULE_TAGS	Android.mk	/^LOCAL_MODULE_TAGS := eng optional$/;"	m
+LOCAL_PATH	Android.mk	/^LOCAL_PATH:= $(call my-dir)$/;"	m
+LOCAL_SHARED_LIBRARIES	Android.mk	/^LOCAL_SHARED_LIBRARIES := \\$/;"	m
+LOCAL_SRC_FILES	Android.mk	/^LOCAL_SRC_FILES:= \\$/;"	m
+LOG_NDEBUG	RDSMain.cpp	5;"	d	file:
+LOG_TAG	CANSession.cpp	17;"	d	file:
+LOG_TAG	CANSession.cpp	18;"	d	file:
+LOG_TAG	RDSMain.cpp	4;"	d	file:
+LOG_TAG	RDService.cpp	6;"	d	file:
+LeftArmMotor	base/DeviceTable.cpp	/^    static const unsigned char LeftArmMotor[] = $/;"	v	file:
+LoadFrame	base/ArmFile.cpp	/^MotionFrames * ArmFile::LoadFrame(BinaryReader * reader)$/;"	f	class:ArmFile
+LoadFromFile	base/ArmFile.cpp	/^MotionFrames * ArmFile::LoadFromFile(const char * fileName, int offset, int size)$/;"	f	class:ArmFile
+LoadFromStream	base/ArmFile.cpp	/^MotionFrames * ArmFile::LoadFromStream(const byte * bytes, int size)$/;"	f	class:ArmFile
+Looper	RDService.cpp	/^    RDService::Looper::Looper()$/;"	f	class:android::RDService::Looper
+Looper	RDService.h	/^            class Looper : public Thread$/;"	c	class:android::RDService
+Looper	service/AdbForwardService.cpp	/^    AdbForwardService::Looper::Looper()$/;"	f	class:android::AdbForwardService::Looper
+Looper	service/AdbForwardService.h	/^        class Looper : public Thread$/;"	c	class:android::AdbForwardService
+MOTIONFRAMES_H_	base/MotionFrames.h	2;"	d
+Main	RDService.cpp	/^    void RDService::Main()$/;"	f	class:android::RDService
+MotionFrames	base/MotionFrames.h	/^        MotionFrames()$/;"	f	class:MotionFrames
+MotionFrames	base/MotionFrames.h	/^class MotionFrames$/;"	c
+MotionPlayer	service/MotionPlayer.cpp	/^    MotionPlayer::MotionPlayer(const void * token, int len) : ServiceObject(token, len)$/;"	f	class:android::MotionPlayer
+MotionPlayer	service/MotionPlayer.h	/^    class MotionPlayer : public BnMotionPlayer, public ServiceObject, public IFrameListener$/;"	c	namespace:android
+MotionPlayer_H__	service/MotionPlayer.h	5;"	d
+MotionService	service/MotionService.cpp	/^    MotionService::MotionService(const void * token, int len) : ServiceObject(token, len)$/;"	f	class:android::MotionService
+MotionService	service/MotionService.h	/^    class MotionService : public BnMotionService, public ServiceObject$/;"	c	namespace:android
+MotionService_H__	service/MotionService.h	5;"	d
+MotorAndBoard	base/DeviceTable.cpp	/^    static const struct MotorAndBoard$/;"	s	namespace:DeviceTable	file:
+MotorAndBoardList	base/DeviceTable.cpp	/^    } MotorAndBoardList[] =$/;"	v	typeref:struct:DeviceTable::MotorAndBoard	file:
+MotorCount	base/DeviceTable.cpp	/^    static const int MotorCount = 0x40;$/;"	v	file:
+MotorMotion	base/CommandObject.cpp	/^    MotorMotion::MotorMotion(int sender_id) : CommandObject(sender_id, 0x02)$/;"	f	class:android::MotorMotion
+MotorMotion	base/CommandObject.h	/^    class MotorMotion : public CommandObject$/;"	c	namespace:android
+NeckMotor	base/DeviceTable.cpp	/^	 static const unsigned char NeckMotor[] = $/;"	v	file:
+OVER	service/MotionPlayer.h	/^            OVER,$/;"	e	enum:android::MotionPlayer::STATUS
+OpenFile	base/ArmFile.cpp	/^        int OpenFile(const char * fileName, int offset, int size)$/;"	f	class:BinaryReader
+OpenStream	base/ArmFile.cpp	/^        int OpenStream(const byte * stream, int size)$/;"	f	class:BinaryReader
+PAUSE	service/MotionPlayer.h	/^            PAUSE,$/;"	e	enum:android::MotionPlayer::STATUS
+ParseRbMessage	CANSession.cpp	/^    int CANSession::ParseRbMessage(const unsigned char *streams, int len)$/;"	f	class:android::CANSession
+ParseRcMessage	CANSession.cpp	/^    int CANSession::ParseRcMessage(const unsigned char *streams, int len)$/;"	f	class:android::CANSession
+ParseRfMessage	CANSession.cpp	/^    int CANSession::ParseRfMessage(const unsigned char *streams, int len)$/;"	f	class:android::CANSession
+ParseRmSysMessage	CANSession.cpp	/^    int CANSession::ParseRmSysMessage(int src_id, const unsigned char *streams, int len)$/;"	f	class:android::CANSession
+PositionMotion	base/CommandObject.cpp	/^    PositionMotion::PositionMotion(int sender_id) : CommandObject(sender_id, 0x08)$/;"	f	class:android::PositionMotion
+PositionMotion	base/CommandObject.h	/^    class PositionMotion : public CommandObject$/;"	c	namespace:android
+RC_SAFE_CMD	base/DeviceMacros.h	39;"	d
+RDSTask	RDSTask.cpp	/^    RDSTask::RDSTask()$/;"	f	class:android::RDSTask
+RDSTask	RDSTask.h	/^    class RDSTask : public IFrameListener$/;"	c	namespace:android
+RDSTask_H_	RDSTask.h	2;"	d
+RDSTopicEvent	base/DeviceMacros.h	/^enum RDSTopicEvent$/;"	g
+RDS_EVENT_SENSOR	base/DeviceMacros.h	/^    RDS_EVENT_SENSOR,$/;"	e	enum:RDSTopicEvent
+RDS_EVENT_SOUND_LOCALIZATION	base/DeviceMacros.h	/^    RDS_EVENT_SOUND_LOCALIZATION,$/;"	e	enum:RDSTopicEvent
+RDS_EVENT_SOUND_TEXT	base/DeviceMacros.h	/^    RDS_EVENT_SOUND_TEXT,$/;"	e	enum:RDSTopicEvent
+RDS_EVENT_SYSTEM	base/DeviceMacros.h	/^    RDS_EVENT_SYSTEM,$/;"	e	enum:RDSTopicEvent
+RDS_EVENT_TOUCH	base/DeviceMacros.h	/^    RDS_EVENT_TOUCH = 0x01,$/;"	e	enum:RDSTopicEvent
+RDS_MACROS__H__	base/DeviceMacros.h	2;"	d
+RDService	RDService.cpp	/^    RDService::RDService()$/;"	f	class:android::RDService
+RDService	RDService.h	/^    class RDService : public BnRDService$/;"	c	namespace:android
+RDService_H__	RDService.h	5;"	d
+READY	service/MotionPlayer.h	/^            READY,$/;"	e	enum:android::MotionPlayer::STATUS
+RM_SYSTEM_CMD	base/DeviceMacros.h	38;"	d
+ROBOT_RESET_ALL	base/DeviceMacros.h	/^     ROBOT_RESET_ALL        = 0,$/;"	e	enum:RobotResetTypes
+ROBOT_RESET_ARMS	base/DeviceMacros.h	/^     ROBOT_RESET_ARMS       = 1,$/;"	e	enum:RobotResetTypes
+ROBOT_RESET_EMOJI	base/DeviceMacros.h	/^     ROBOT_RESET_EMOJI      = 0x12,$/;"	e	enum:RobotResetTypes
+ROBOT_RESET_LEFT_ARM	base/DeviceMacros.h	/^     ROBOT_RESET_LEFT_ARM   = 2,$/;"	e	enum:RobotResetTypes
+ROBOT_RESET_NECK	base/DeviceMacros.h	/^     ROBOT_RESET_NECK       = 4,$/;"	e	enum:RobotResetTypes
+ROBOT_RESET_RIGHT_ARM	base/DeviceMacros.h	/^     ROBOT_RESET_RIGHT_ARM  = 3,$/;"	e	enum:RobotResetTypes
+ROBOT_RESET_WAIST	base/DeviceMacros.h	/^     ROBOT_RESET_WAIST      = 5,$/;"	e	enum:RobotResetTypes
+ROBOT_STOP_ACTIONS	base/DeviceMacros.h	/^     ROBOT_STOP_ACTIONS    = 0x11,$/;"	e	enum:RobotStopTypes
+ROBOT_STOP_ALL	base/DeviceMacros.h	/^     ROBOT_STOP_ALL        = 0,$/;"	e	enum:RobotStopTypes
+ROBOT_STOP_ARMS	base/DeviceMacros.h	/^     ROBOT_STOP_ARMS       = 1,$/;"	e	enum:RobotStopTypes
+ROBOT_STOP_EMOJI	base/DeviceMacros.h	/^     ROBOT_STOP_EMOJI      = 0x12,$/;"	e	enum:RobotStopTypes
+ROBOT_STOP_LEFT_ARM	base/DeviceMacros.h	/^     ROBOT_STOP_LEFT_ARM   = 2,$/;"	e	enum:RobotStopTypes
+ROBOT_STOP_RIGHT_ARM	base/DeviceMacros.h	/^     ROBOT_STOP_RIGHT_ARM  = 3,$/;"	e	enum:RobotStopTypes
+ROBOT_STOP_WHEELS	base/DeviceMacros.h	/^     ROBOT_STOP_WHEELS     = 4,$/;"	e	enum:RobotStopTypes
+RUNNING	service/MotionPlayer.h	/^            RUNNING,$/;"	e	enum:android::MotionPlayer::STATUS
+RawCommandService	service/RawCommandService.cpp	/^    RawCommandService::RawCommandService(const void * token, int len) : ServiceObject(token, len)$/;"	f	class:android::RawCommandService
+RawCommandService	service/RawCommandService.h	/^    class RawCommandService : public BnRawCommandService, public ServiceObject$/;"	c	namespace:android
+RawCommandService_H__	service/RawCommandService.h	5;"	d
+RbCompleteTask	CANSession.cpp	/^    void CANSession::RbCompleteTask(int type, const unsigned char *streams, int len)$/;"	f	class:android::CANSession
+RbSerialization	base/ControllerObject.cpp	/^    int ControllerObject::RbSerialization()$/;"	f	class:android::ControllerObject
+RcSafeStatusCmdMap	base/DeviceTable.cpp	/^    }, RcSafeStatusCmdMap[]=$/;"	v	typeref:struct:DeviceTable::RmSysCtrlCmdMap_	file:
+RcSerialization	base/ControllerObject.cpp	/^    int ControllerObject::RcSerialization()$/;"	f	class:android::ControllerObject
+Read	base/ArmFile.cpp	/^        byte * Read(int len)$/;"	f	class:BinaryReader
+ReadByte	base/ArmFile.cpp	/^        int ReadByte()$/;"	f	class:BinaryReader
+ReadCommand	base/ArmFile.cpp	/^        byte * ReadCommand(int len)$/;"	f	class:BinaryReader
+ReadUInt16	base/ArmFile.cpp	/^        int ReadUInt16()$/;"	f	class:BinaryReader
+ReadUInt32	base/ArmFile.cpp	/^        int ReadUInt32()$/;"	f	class:BinaryReader
+ReportEvent	CANSession.cpp	/^    void CANSession::ReportEvent(int from, int event, int arg1, int arg2)$/;"	f	class:android::CANSession
+ResetMotion	base/CommandObject.cpp	/^    ResetMotion::ResetMotion(int sender_id) : CommandObject(sender_id, 0xC0)$/;"	f	class:android::ResetMotion
+ResetMotion	base/CommandObject.h	/^    class ResetMotion : public CommandObject$/;"	c	namespace:android
+Rhythm	base/MotionFrames.h	/^        int Rhythm;$/;"	m	class:MotionFrames
+RightArmMotor	base/DeviceTable.cpp	/^    static const unsigned char RightArmMotor[] = $/;"	v	file:
+RmCANServiceDied	CANSession.cpp	/^    void CANSession::RmCANServiceDied()$/;"	f	class:android::CANSession
+RmRecvCANData	CANSession.cpp	/^    void CANSession::RmRecvCANData(int priority, int src_id, const void *pdata, int len)$/;"	f	class:android::CANSession
+RmSerialiaztion	base/ControllerObject.cpp	/^    int ControllerObject::RmSerialiaztion()$/;"	f	class:android::ControllerObject
+RmSysCtrlCmdMap	base/DeviceTable.cpp	/^    } RmSysCtrlCmdMap[]=$/;"	v	typeref:struct:DeviceTable::RmSysCtrlCmdMap_	file:
+RmSysCtrlCmdMap_	base/DeviceTable.cpp	/^    static const struct RmSysCtrlCmdMap_{$/;"	s	namespace:DeviceTable	file:
+RobotResetTypes	base/DeviceMacros.h	/^enum RobotResetTypes$/;"	g
+RobotSensorMap	base/DeviceTable.cpp	/^    }RobotSensorMap[]=$/;"	v	typeref:struct:DeviceTable::RobotSensorTypeHandleMap_	file:
+RobotSensorTypeHandleMap_	base/DeviceTable.cpp	/^    static const struct RobotSensorTypeHandleMap_{$/;"	s	namespace:DeviceTable	file:
+RobotStopTypes	base/DeviceMacros.h	/^enum RobotStopTypes$/;"	g
+Run	base/CommandObject.cpp	/^    int ActionMotion::Run(int action_id, int repeat, int duration)$/;"	f	class:android::ActionMotion
+Run	base/CommandObject.cpp	/^    int EmojiMotion::Run(int id, int duration, int repeat)$/;"	f	class:android::EmojiMotion
+Run	base/CommandObject.cpp	/^    int MotorMotion::Run(const unsigned char * pdata, int len, int duration)$/;"	f	class:android::MotorMotion
+Run	base/CommandObject.cpp	/^    int MotorMotion::Run(int joint_id, int angle, int duration, int flags)$/;"	f	class:android::MotorMotion
+Run	base/CommandObject.cpp	/^    int ResetMotion::Run()$/;"	f	class:android::ResetMotion
+Run	base/CommandObject.cpp	/^    int ResetMotion::Run(int id)$/;"	f	class:android::ResetMotion
+Run	base/CommandObject.cpp	/^    int SettingObject::Run(int id, int cmd, int arg1, int arg2, const sp<IResultListener> & onResultListener)$/;"	f	class:android::SettingObject
+Run	base/CommandObject.cpp	/^    int StopMotion::Run(int board_id, unsigned char * data)$/;"	f	class:android::StopMotion
+Run	base/CommandObject.cpp	/^    int StopMotion::Run(int id, int bodyPart, int arg1)$/;"	f	class:android::StopMotion
+Run	base/ControllerObject.cpp	/^    int ControllerObject::Run(int to, int cmd, int arg1, int arg2, const sp<ICompletionListener> & onCompletionListener)$/;"	f	class:android::ControllerObject
+Run	service/AdbForwardService.cpp	/^    int AdbForwardService::Run()$/;"	f	class:android::AdbForwardService
+SENDTIMEOUT	base/CommandObject.cpp	20;"	d	file:
+STATUS	service/MotionPlayer.h	/^        enum STATUS$/;"	g	class:android::MotionPlayer
+Send	CANSession.cpp	/^    int CANSession::Send(int dest, const unsigned char * streams, int len)$/;"	f	class:android::CANSession
+Send	base/CommandObject.cpp	/^    int ActionMotion::Send()$/;"	f	class:android::ActionMotion
+Send	base/CommandObject.cpp	/^    int CommandObject::Send()$/;"	f	class:android::CommandObject
+Send	base/CommandObject.cpp	/^    int EmojiMotion::Send()$/;"	f	class:android::EmojiMotion
+Send	base/CommandObject.cpp	/^    int MotorMotion::Send()$/;"	f	class:android::MotorMotion
+Send	base/CommandObject.cpp	/^    int PositionMotion::Send()$/;"	f	class:android::PositionMotion
+Send	base/CommandObject.cpp	/^    int PositionMotion::Send(int task_id, int act_id, unsigned char * pdata, int len)$/;"	f	class:android::PositionMotion
+Send	base/CommandObject.cpp	/^    int ResetMotion::Send()$/;"	f	class:android::ResetMotion
+Send	base/CommandObject.cpp	/^    int SettingObject::Send()$/;"	f	class:android::SettingObject
+Send	base/CommandObject.cpp	/^    int StopMotion::Send()$/;"	f	class:android::StopMotion
+Send	base/ControllerObject.cpp	/^    int ControllerObject::Send()$/;"	f	class:android::ControllerObject
+ServiceObject	base/ServiceObject.cpp	/^    ServiceObject::ServiceObject(const void * token, int len)$/;"	f	class:android::ServiceObject
+ServiceObject	base/ServiceObject.h	/^    class ServiceObject$/;"	c	namespace:android
+ServiceObject_H_	base/ServiceObject.h	2;"	d
+SetRawTopic	CANSession.cpp	/^    void CANSession::SetRawTopic(sp<ITopic> topic)$/;"	f	class:android::CANSession
+SettingCmdMap	base/DeviceTable.cpp	/^    } SettingCmdMap[]= $/;"	v	typeref:struct:DeviceTable::SettingCmdMap_	file:
+SettingCmdMap_	base/DeviceTable.cpp	/^    static const struct SettingCmdMap_{$/;"	s	namespace:DeviceTable	file:
+SettingIDMap	base/DeviceTable.cpp	/^    } SettingIDMap[] = $/;"	v	typeref:struct:DeviceTable::SettingIDMap_	file:
+SettingIDMap_	base/DeviceTable.cpp	/^    static const struct SettingIDMap_{$/;"	s	namespace:DeviceTable	file:
+SettingObject	base/CommandObject.cpp	/^    SettingObject::SettingObject(int sender_id) : CommandObject(sender_id, 0x01)$/;"	f	class:android::SettingObject
+SettingObject	base/CommandObject.h	/^    class SettingObject : public CommandObject$/;"	c	namespace:android
+Skip	base/ArmFile.cpp	/^        int Skip(int offset)$/;"	f	class:BinaryReader
+Stop	base/CommandObject.cpp	/^    int CommandObject::Stop()$/;"	f	class:android::CommandObject
+Stop	base/CommandObject.cpp	/^    int PositionMotion::Stop()$/;"	f	class:android::PositionMotion
+Stop	service/AdbForwardService.cpp	/^    int AdbForwardService::Stop()$/;"	f	class:android::AdbForwardService
+StopMotion	base/CommandObject.cpp	/^    StopMotion::StopMotion(int sender_id) : CommandObject(sender_id, 0xF0)$/;"	f	class:android::StopMotion
+StopMotion	base/CommandObject.h	/^    class StopMotion : public CommandObject$/;"	c	namespace:android
+SysMotionTable	base/DeviceTable.cpp	/^    } SysMotionTable[] =$/;"	v	typeref:struct:DeviceTable::SysMotionTable_	file:
+SysMotionTable_	base/DeviceTable.cpp	/^    static const struct SysMotionTable_$/;"	s	namespace:DeviceTable	file:
+SystemController	service/SystemController.cpp	/^    SystemController::SystemController(const void * token, int len) : ServiceObject(token, len)$/;"	f	class:android::SystemController
+SystemController	service/SystemController.h	/^    class SystemController : public BnSystemController, public ServiceObject$/;"	c	namespace:android
+SystemController_H__	service/SystemController.h	5;"	d
+Turn	base/CommandObject.cpp	/^    int PositionMotion::Turn(int angle, int speed)$/;"	f	class:android::PositionMotion
+UNREADY	service/MotionPlayer.h	/^            UNREADY = 0,$/;"	e	enum:android::MotionPlayer::STATUS
+WaistMotor	base/DeviceTable.cpp	/^	 static const unsigned char WaistMotor[] = $/;"	v	file:
+Walk	base/CommandObject.cpp	/^    int PositionMotion::Walk(int distance, int speed, int flag)$/;"	f	class:android::PositionMotion
+WalkTo	base/CommandObject.cpp	/^    int PositionMotion::WalkTo(int target, int speed, int flag)$/;"	f	class:android::PositionMotion
+WheelMotor	base/DeviceTable.cpp	/^    static const unsigned char WheelMotor[] = $/;"	v	file:
+action_id	base/CommandObject.h	/^            int action_id;$/;"	m	class:android::ActionMotion
+adbForwardService	RDService.h	/^            AdbForwardService * adbForwardService;$/;"	m	class:android::RDService
+addCommand	RDSTask.cpp	/^    int RDSTask::addCommand(CommandObject * obj)$/;"	f	class:android::RDSTask
+addFrameListener	RDService.cpp	/^    void RDService::Looper::addFrameListener(IFrameListener * listener)$/;"	f	class:android::RDService::Looper
+addFrameListener	RDService.cpp	/^    void RDService::addFrameListener(IFrameListener * listener)$/;"	f	class:android::RDService
+android	CANSession.cpp	/^namespace android$/;"	n	file:
+android	CANSession.h	/^namespace android$/;"	n
+android	RDSTask.cpp	/^namespace android$/;"	n	file:
+android	RDSTask.h	/^namespace android$/;"	n
+android	RDService.cpp	/^namespace android$/;"	n	file:
+android	RDService.h	/^namespace android$/;"	n
+android	base/CommandObject.cpp	/^namespace android$/;"	n	file:
+android	base/CommandObject.h	/^namespace android$/;"	n
+android	base/ControllerObject.cpp	/^namespace android$/;"	n	file:
+android	base/ControllerObject.h	/^namespace android$/;"	n
+android	base/ServiceObject.cpp	/^namespace android$/;"	n	file:
+android	base/ServiceObject.h	/^namespace android$/;"	n
+android	service/AdbForwardService.cpp	/^namespace android$/;"	n	file:
+android	service/AdbForwardService.h	/^namespace android$/;"	n
+android	service/MotionPlayer.cpp	/^namespace android $/;"	n	file:
+android	service/MotionPlayer.h	/^namespace android$/;"	n
+android	service/MotionService.cpp	/^namespace android $/;"	n	file:
+android	service/MotionService.h	/^namespace android$/;"	n
+android	service/RawCommandService.cpp	/^namespace android $/;"	n	file:
+android	service/RawCommandService.h	/^namespace android$/;"	n
+android	service/SystemController.cpp	/^namespace android $/;"	n	file:
+android	service/SystemController.h	/^namespace android$/;"	n
+angle	base/CommandObject.h	/^                int angle;$/;"	m	union:android::PositionMotion::__anon1
+angle	base/CommandObject.h	/^            int angle;$/;"	m	class:android::MotorMotion
+appCmd	base/DeviceTable.cpp	/^        unsigned char appCmd;$/;"	m	struct:DeviceTable::SettingCmdMap_	file:
+arg1	base/ControllerObject.h	/^            int arg1;$/;"	m	class:android::ControllerObject
+arg2	base/ControllerObject.h	/^            int arg2;$/;"	m	class:android::ControllerObject
+bClose	service/AdbForwardService.cpp	/^    static bool bClose = false;$/;"	v	file:
+bEnableRun	service/MotionPlayer.cpp	/^	bool MotionPlayer::bEnableRun = true;$/;"	m	class:android::MotionPlayer	file:
+bEnableRun	service/MotionPlayer.h	/^		 static bool bEnableRun;$/;"	m	class:android::MotionPlayer
+bStop	RDService.h	/^                    bool bStop;$/;"	m	class:android::RDService::Looper
+bStop	service/AdbForwardService.h	/^                bool bStop;$/;"	m	class:android::AdbForwardService::Looper
+board_id	base/CommandObject.h	/^            int board_id;$/;"	m	class:android::CommandObject
+board_id	base/DeviceTable.cpp	/^        short board_id;$/;"	m	struct:DeviceTable::MotorAndBoard	file:
+buffer_	CANSession.cpp	/^    static char buffer_[16];$/;"	v	file:
+byte	base/ArmFile.h	/^typedef unsigned char byte;$/;"	t
+bytes	base/ArmFile.cpp	/^        byte * bytes;$/;"	m	class:BinaryReader	file:
+callback	base/CommandObject.h	/^            sp<ICompletionListener> callback;$/;"	m	class:android::CommandObject
+cancelCommand	RDSTask.cpp	/^    void RDSTask::cancelCommand(int session_id)$/;"	f	class:android::RDSTask
+capacity	base/ArmFile.cpp	/^        int capacity;$/;"	m	class:BinaryReader	file:
+checkTimeout	RDSTask.cpp	/^    void RDSTask::checkTimeout(int timeSincelastFrame)$/;"	f	class:android::RDSTask
+clear	base/ServiceObject.cpp	/^    void ServiceObject::clear()$/;"	f	class:android::ServiceObject
+clear	service/MotionPlayer.cpp	/^    void MotionPlayer::clear()$/;"	f	class:android::MotionPlayer
+cls_id	base/CommandObject.h	/^            int cls_id;$/;"	m	class:android::CommandObject
+cmd	base/DeviceTable.cpp	/^        unsigned char cmd;$/;"	m	struct:DeviceTable::RmSysCtrlCmdMap_	file:
+cmd_count	base/CommandObject.h	/^            int cmd_count; \/\/ comand count$/;"	m	class:android::CommandObject
+co_id	base/CommandObject.h	/^            int co_id; \/\/command_id$/;"	m	class:android::CommandObject
+commandLength	base/MotionFrames.h	/^            int commandLength;$/;"	m	class:MotionFrames::Frame
+commandList	base/MotionFrames.h	/^            unsigned char * commandList;$/;"	m	class:MotionFrames::Frame
+currentFrame	service/MotionPlayer.h	/^        int currentFrame;$/;"	m	class:android::MotionPlayer
+currentPosition	service/MotionPlayer.h	/^        int currentPosition;$/;"	m	class:android::MotionPlayer
+dataCap	base/CommandObject.h	/^            int dataCap;$/;"	m	class:android::MotorMotion
+dataSize	base/CommandObject.h	/^            int dataSize;$/;"	m	class:android::MotorMotion
+distance	base/CommandObject.h	/^                int distance;$/;"	m	union:android::PositionMotion::__anon1
+doAction	service/MotionService.cpp	/^    int MotionService::doAction(int id, int repeat, int duration, int flags)$/;"	f	class:android::MotionService
+duration	base/CommandObject.h	/^            int duration;$/;"	m	class:android::ActionMotion
+duration	base/CommandObject.h	/^            int duration;$/;"	m	class:android::EmojiMotion
+duration	base/CommandObject.h	/^            int duration;$/;"	m	class:android::MotorMotion
+duration	base/MotionFrames.h	/^            int duration;$/;"	m	class:MotionFrames::Frame
+duration	base/MotionFrames.h	/^        int duration;$/;"	m	class:MotionFrames
+emoji	service/MotionService.cpp	/^    int MotionService::emoji(int id, int duration, int repeat, int flags)$/;"	f	class:android::MotionService
+emoji_id	base/DeviceTable.cpp	/^        unsigned char emoji_id;$/;"	m	struct:DeviceTable::EmojiTable_	file:
+enabled	base/CommandObject.h	/^            bool enabled; $/;"	m	class:android::SettingObject
+flags	base/CommandObject.h	/^            int flags;$/;"	m	class:android::CommandObject
+fp	base/ArmFile.cpp	/^        FILE * fp;$/;"	m	class:BinaryReader	file:
+fpos	base/ArmFile.cpp	/^        int fpos;$/;"	m	class:BinaryReader	file:
+frameList	base/MotionFrames.h	/^        android::Vector<Frame *> frameList;$/;"	m	class:MotionFrames
+frameTime	RDService.h	/^                    int frameTime;$/;"	m	class:android::RDService::Looper
+frameTime	base/MotionFrames.h	/^        int frameTime;$/;"	m	class:MotionFrames
+frameType	base/MotionFrames.h	/^        int frameType;$/;"	m	class:MotionFrames
+framestart	base/ArmFile.cpp	/^static byte framestart[] = { 0x46, 0x52, 0x41, 0x4d };$/;"	v	file:
+g_task_session_id	base/CommandObject.cpp	/^    static int g_task_session_id = 0x0001;$/;"	v	file:
+getDuration	service/MotionPlayer.cpp	/^    int MotionPlayer::getDuration()$/;"	f	class:android::MotionPlayer
+getEmoji	base/DeviceTable.cpp	/^    int getEmoji(int id)$/;"	f	namespace:DeviceTable
+getMotionPlayer	RDService.cpp	/^    sp<IMotionPlayer> RDService::getMotionPlayer(const void * token, int len)$/;"	f	class:android::RDService
+getMotionService	RDService.cpp	/^    sp<IMotionService> RDService::getMotionService(const void * token, int len)$/;"	f	class:android::RDService
+getMotorAndBoardID	base/DeviceTable.cpp	/^    int getMotorAndBoardID(int joint_id, int & motor_id, int & board_id)$/;"	f	namespace:DeviceTable
+getPosition	service/MotionPlayer.cpp	/^    int MotionPlayer::getPosition()$/;"	f	class:android::MotionPlayer
+getRawCommandService	RDService.cpp	/^    sp<IRawCommandService> RDService::getRawCommandService(const void * token, int len)$/;"	f	class:android::RDService
+getRobotBodyPart	base/DeviceTable.cpp	/^    int getRobotBodyPart(int id)$/;"	f	namespace:DeviceTable
+getRunStatus	service/MotionPlayer.cpp	/^	int MotionPlayer::getRunStatus()$/;"	f	class:android::MotionPlayer
+getSensorId	base/DeviceTable.cpp	/^    int getSensorId(uint8_t id)$/;"	f	namespace:DeviceTable
+getSettingCommand	base/DeviceTable.cpp	/^    int getSettingCommand(int cmd)$/;"	f	namespace:DeviceTable
+getSettingIDList	base/DeviceTable.cpp	/^    int getSettingIDList(int ids, unsigned char * idList, int len)$/;"	f	namespace:DeviceTable
+getSysCtrlCmd	base/DeviceTable.cpp	/^    int getSysCtrlCmd(int respid)$/;"	f	namespace:DeviceTable
+getSystemController	RDService.cpp	/^    sp<ISystemController> RDService::getSystemController(const void * token, int len)$/;"	f	class:android::RDService
+getSystemMotion	base/DeviceTable.cpp	/^    int getSystemMotion(int id)$/;"	f	namespace:DeviceTable
+hwCmd	base/DeviceTable.cpp	/^        unsigned char hwCmd;$/;"	m	struct:DeviceTable::SettingCmdMap_	file:
+id	base/CommandObject.h	/^            int id;$/;"	m	class:android::EmojiMotion
+id	base/CommandObject.h	/^            int id;$/;"	m	class:android::ResetMotion
+id	base/DeviceTable.cpp	/^        const unsigned char id;$/;"	m	struct:DeviceTable::SettingIDMap_	file:
+id	base/DeviceTable.cpp	/^        uint8_t id; \/\/android define$/;"	m	struct:DeviceTable::RobotSensorTypeHandleMap_	file:
+id	base/DeviceTable.cpp	/^        unsigned char id;$/;"	m	struct:DeviceTable::BodyParts_	file:
+id	base/DeviceTable.cpp	/^        unsigned char id;$/;"	m	struct:DeviceTable::EmojiTable_	file:
+id	base/DeviceTable.cpp	/^        unsigned short id;$/;"	m	struct:DeviceTable::SysMotionTable_	file:
+idset	base/CommandObject.h	/^            unsigned char idset[32];$/;"	m	class:android::SettingObject
+idset	base/DeviceTable.cpp	/^        const unsigned char *idset;$/;"	m	struct:DeviceTable::SettingIDMap_	file:
+inList	RDSTask.h	/^            List<CommandObject *> inList;$/;"	m	class:android::RDSTask
+instance	CANSession.cpp	/^    CANSession * CANSession::instance = NULL;$/;"	m	class:android::CANSession	file:
+instance	CANSession.h	/^            static CANSession * instance;$/;"	m	class:android::CANSession
+instance	RDSTask.cpp	/^    RDSTask * RDSTask::instance = NULL;$/;"	m	class:android::RDSTask	file:
+instance	RDSTask.h	/^            static RDSTask * instance;$/;"	m	class:android::RDSTask
+instance	RDService.cpp	/^    RDService * RDService::instance = NULL;$/;"	m	class:android::RDService	file:
+instance	RDService.h	/^            static RDService * instance;$/;"	m	class:android::RDService
+isSafely	service/MotionPlayer.cpp	/^    int MotionPlayer::isSafely()$/;"	f	class:android::MotionPlayer
+isUnset	base/ServiceObject.h	/^            bool isUnset;$/;"	m	class:android::ServiceObject
+listLock	RDSTask.cpp	/^    static Mutex listLock;$/;"	v	file:
+listLock	RDService.h	/^                    Mutex listLock;$/;"	m	class:android::RDService::Looper
+listener	service/SystemController.h	/^        sp<IMessageListener> listener;$/;"	m	class:android::SystemController
+listenerList	RDService.h	/^                    List<IFrameListener *> listenerList;$/;"	m	class:android::RDService::Looper
+looper	RDService.h	/^            sp<Looper> looper;$/;"	m	class:android::RDService
+looper	service/AdbForwardService.h	/^            sp<Looper> looper;$/;"	m	class:android::AdbForwardService
+m_canClient	CANSession.h	/^            sp<RmCANClient> m_canClient;$/;"	m	class:android::CANSession
+main	RDSMain.cpp	/^int main(int argc, char** argv)$/;"	f
+motionCommand	service/AdbForwardService.cpp	/^    static void motionCommand(unsigned char * pData)$/;"	f	namespace:android	file:
+motionFrames	service/MotionPlayer.h	/^        MotionFrames * motionFrames;$/;"	m	class:android::MotionPlayer
+motionPlayers	RDService.h	/^            List< sp<MotionPlayer> > motionPlayers;$/;"	m	class:android::RDService
+motionReset	service/AdbForwardService.cpp	/^    static void motionReset()$/;"	f	namespace:android	file:
+motionServices	RDService.h	/^            List< sp<MotionService> > motionServices;$/;"	m	class:android::RDService
+motion_id	base/DeviceTable.cpp	/^        unsigned char motion_id;$/;"	m	struct:DeviceTable::SysMotionTable_	file:
+motorDisabled	RDSTask.cpp	/^	bool RDSTask::motorDisabled = false;$/;"	m	class:android::RDSTask	file:
+motorDisabled	RDSTask.h	/^			static bool motorDisabled;$/;"	m	class:android::RDSTask
+motorMotion	service/MotionPlayer.h	/^        MotorMotion motorMotion;$/;"	m	class:android::MotionPlayer
+motorMotion	service/MotionService.h	/^        MotorMotion motorMotion;$/;"	m	class:android::MotionService
+motorMotion	service/RawCommandService.h	/^        MotorMotion motorMotion;$/;"	m	class:android::RawCommandService
+motor_id	base/CommandObject.h	/^            int motor_id;$/;"	m	class:android::CommandObject
+motor_id	base/DeviceTable.cpp	/^        short motor_id;$/;"	m	struct:DeviceTable::MotorAndBoard	file:
+newStopCommand	base/CommandObject.cpp	/^    int PositionMotion::newStopCommand()$/;"	f	class:android::PositionMotion
+notifyCommandCompleted	RDService.cpp	/^    void RDService::notifyCommandCompleted(int sender_id, int session_id, int result, int errorcode)$/;"	f	class:android::RDService
+notifyMessage	RDService.cpp	/^    void RDService::notifyMessage(int from, int what, int arg1, int arg2)$/;"	f	class:android::RDService
+offset	base/ArmFile.cpp	/^        long offset;$/;"	m	class:BinaryReader	file:
+onCommandCompletion	RDSTask.cpp	/^    void RDSTask::onCommandCompletion(int task_id, int result, int flags)$/;"	f	class:android::RDSTask
+onCompletion	base/ServiceObject.cpp	/^    void ServiceObject::onCompletion(int session_id, int result, int errorcode)$/;"	f	class:android::ServiceObject
+onCompletionListener	base/ServiceObject.h	/^            sp<ICompletionListener> onCompletionListener;$/;"	m	class:android::ServiceObject
+onResult	base/CommandObject.h	/^            sp<IResultListener> onResult;$/;"	m	class:android::CommandObject
+outList	RDSTask.h	/^            CommandObject * outList[255];$/;"	m	class:android::RDSTask
+pData	base/CommandObject.h	/^            unsigned char * pData;$/;"	m	class:android::MotorMotion
+pStream	base/ArmFile.cpp	/^        const byte * pStream;$/;"	m	class:BinaryReader	file:
+parts_	base/DeviceTable.cpp	/^        unsigned char parts_;$/;"	m	struct:DeviceTable::BodyParts_	file:
+pause	service/MotionPlayer.cpp	/^    int MotionPlayer::pause()$/;"	f	class:android::MotionPlayer
+playLock	service/MotionPlayer.h	/^        Mutex playLock;$/;"	m	class:android::MotionPlayer
+prepare	service/MotionPlayer.cpp	/^    int MotionPlayer::prepare()$/;"	f	class:android::MotionPlayer
+rawCommandService	RDService.h	/^            sp<RawCommandService> rawCommandService;$/;"	m	class:android::RDService
+rawTopic	CANSession.h	/^            sp<ITopic> rawTopic;$/;"	m	class:android::CANSession
+release	service/MotionPlayer.cpp	/^    void MotionPlayer::release()$/;"	f	class:android::MotionPlayer
+release	service/MotionService.cpp	/^    void MotionService::release()$/;"	f	class:android::MotionService
+release	service/SystemController.cpp	/^    void SystemController::release()$/;"	f	class:android::SystemController
+removeFrameListener	RDService.cpp	/^    void RDService::Looper::removeFrameListener(IFrameListener * listener)$/;"	f	class:android::RDService::Looper
+removeFrameListener	RDService.cpp	/^    void RDService::removeFrameListener(IFrameListener * listener)$/;"	f	class:android::RDService
+repeat	base/CommandObject.h	/^            int repeat;$/;"	m	class:android::CommandObject
+reply	base/DeviceTable.cpp	/^        unsigned char reply;$/;"	m	struct:DeviceTable::RmSysCtrlCmdMap_	file:
+reset	service/MotionService.cpp	/^    int MotionService::reset(int id)$/;"	f	class:android::MotionService
+resume	service/MotionPlayer.cpp	/^    int MotionPlayer::resume()$/;"	f	class:android::MotionPlayer
+run	service/AdbForwardService.cpp	/^    static void * run(void * args )$/;"	f	namespace:android	file:
+run	service/MotionService.cpp	/^    int MotionService::run(const void * pdata, int len, int duration, int flags)$/;"	f	class:android::MotionService
+run	service/RawCommandService.cpp	/^    int RawCommandService::run(const void * pdata, int len)$/;"	f	class:android::RawCommandService
+runMotor	service/MotionService.cpp	/^    int MotionService::runMotor(int id, int angle, int duration\/*msec*\/, int flags)$/;"	f	class:android::MotionService
+runTime	base/MotionFrames.h	/^            int runTime;$/;"	m	class:MotionFrames::Frame
+seekToPosition	service/MotionPlayer.h	/^        int seekToPosition;$/;"	m	class:android::MotionPlayer
+send	service/RawCommandService.cpp	/^    int RawCommandService::send(int dest, const void * streams, int len)$/;"	f	class:android::RawCommandService
+send	service/SystemController.cpp	/^    int SystemController::send(int to, int cmd, int arg1, int arg2, const sp<ICompletionListener> & onCompletionListener)$/;"	f	class:android::SystemController
+sendCommand	RDSTask.cpp	/^    int RDSTask::sendCommand(int dest, const unsigned char * streams, int len)$/;"	f	class:android::RDSTask
+sendLock	RDSTask.cpp	/^    static Mutex sendLock;$/;"	v	file:
+sender_id	base/CommandObject.h	/^            int sender_id;$/;"	m	class:android::CommandObject
+serviceLock	RDService.h	/^            Mutex serviceLock;$/;"	m	class:android::RDService
+setCompletionListener	service/MotionPlayer.cpp	/^    int MotionPlayer::setCompletionListener(const sp<ICompletionListener> & onCompletionListener)$/;"	f	class:android::MotionPlayer
+setCompletionListener	service/MotionService.cpp	/^    int MotionService::setCompletionListener(const sp<ICompletionListener> & onCompletionListener)$/;"	f	class:android::MotionService
+setDataSource	service/MotionPlayer.cpp	/^    int MotionPlayer::setDataSource(const char * path, int offset, int size)$/;"	f	class:android::MotionPlayer
+setDataSourceByStream	service/MotionPlayer.cpp	/^    int MotionPlayer::setDataSourceByStream(const unsigned char * bytes, int size)$/;"	f	class:android::MotionPlayer
+setEnableRun	service/MotionPlayer.cpp	/^	int MotionPlayer::setEnableRun(int bEnable)$/;"	f	class:android::MotionPlayer
+setMessageListener	service/SystemController.cpp	/^    int SystemController::setMessageListener(const sp<IMessageListener> & onMessageListener)$/;"	f	class:android::SystemController
+setPosition	service/MotionPlayer.cpp	/^    int MotionPlayer::setPosition(int pos)$/;"	f	class:android::MotionPlayer
+setting	service/MotionService.cpp	/^    int MotionService::setting(int id, int cmd, int arg1, int arg2, const sp<IResultListener> & onResultListener)$/;"	f	class:android::MotionService
+size	base/ArmFile.cpp	/^        long size;$/;"	m	class:BinaryReader	file:
+speed	base/CommandObject.h	/^            int speed;$/;"	m	class:android::PositionMotion
+start	service/MotionPlayer.cpp	/^    int MotionPlayer::start()$/;"	f	class:android::MotionPlayer
+startSend	base/CommandObject.cpp	/^    int CommandObject::startSend()$/;"	f	class:android::CommandObject
+startTime	base/CommandObject.h	/^            float startTime;$/;"	m	class:android::CommandObject
+startcode	base/ArmFile.cpp	/^static byte startcode[] = { 0x50, 0x95, 0x28, 0x00 };$/;"	v	file:
+status	service/MotionPlayer.h	/^        STATUS status; \/\/$/;"	m	class:android::MotionPlayer
+stop	RDService.cpp	/^    void RDService::Looper::stop()$/;"	f	class:android::RDService::Looper
+stop	service/AdbForwardService.cpp	/^    void AdbForwardService::Looper::stop()$/;"	f	class:android::AdbForwardService::Looper
+stop	service/MotionPlayer.cpp	/^    int MotionPlayer::stop()$/;"	f	class:android::MotionPlayer
+stop	service/MotionService.cpp	/^    int MotionService::stop(int session_id, int bodyPart, int arg1)$/;"	f	class:android::MotionService
+stopMotion	RDSTask.cpp	/^    void RDSTask::stopMotion(int clsid, int dest, const unsigned char * streams, int len)$/;"	f	class:android::RDSTask
+streams	base/CommandObject.h	/^            unsigned char * streams;$/;"	m	class:android::CommandObject
+streams	service/AdbForwardService.cpp	/^    static unsigned char streams[8];$/;"	v	file:
+subscribe	RDService.cpp	/^    int RDService::subscribe(const sp<ITopic> & topic, const void * token, int len)$/;"	f	class:android::RDService
+systemControllers	RDService.h	/^            List< sp<SystemController> > systemControllers;$/;"	m	class:android::RDService
+target	base/ControllerObject.h	/^            int target;$/;"	m	class:android::ControllerObject
+task_id	base/CommandObject.h	/^            int task_id;$/;"	m	class:android::CommandObject
+task_session_id	base/CommandObject.h	/^            int task_session_id;$/;"	m	class:android::CommandObject
+task_type_id	base/CommandObject.h	/^            int task_type_id;$/;"	m	class:android::ActionMotion
+threadLoop	RDService.cpp	/^    bool RDService::Looper::threadLoop()$/;"	f	class:android::RDService::Looper
+threadLoop	service/AdbForwardService.cpp	/^    bool AdbForwardService::Looper::threadLoop()$/;"	f	class:android::AdbForwardService::Looper
+timePosition	base/MotionFrames.h	/^            int timePosition;$/;"	m	class:MotionFrames::Frame
+timeout	base/CommandObject.h	/^            int timeout;$/;"	m	class:android::CommandObject
+token	base/ServiceObject.h	/^            char * token;$/;"	m	class:android::ServiceObject
+turn	service/MotionService.cpp	/^    int MotionService::turn(int angle, int speed, int flags)$/;"	f	class:android::MotionService
+type	base/DeviceTable.cpp	/^        uint8_t type;   \/\/rc define$/;"	m	struct:DeviceTable::RobotSensorTypeHandleMap_	file:
+uid	base/ServiceObject.h	/^            int uid;$/;"	m	class:android::ServiceObject
+update	RDSTask.cpp	/^    int RDSTask::update(int timeSincelastFrame)$/;"	f	class:android::RDSTask
+update	RDService.cpp	/^    void RDService::update()$/;"	f	class:android::RDService
+update	service/MotionPlayer.cpp	/^    int MotionPlayer::update(int timeSincelastFrame)$/;"	f	class:android::MotionPlayer
+val	base/CommandObject.h	/^            unsigned char val;$/;"	m	class:android::SettingObject
+walk	service/MotionService.cpp	/^    int MotionService::walk(int distance, int speed, int flags)$/;"	f	class:android::MotionService
+walkTo	service/MotionService.cpp	/^    int MotionService::walkTo(int target, int speed, int flags)$/;"	f	class:android::MotionService
+~ActionMotion	base/CommandObject.cpp	/^    ActionMotion::~ActionMotion()$/;"	f	class:android::ActionMotion
+~AdbForwardService	service/AdbForwardService.cpp	/^    AdbForwardService::~AdbForwardService()$/;"	f	class:android::AdbForwardService
+~BinaryReader	base/ArmFile.cpp	/^        ~BinaryReader()$/;"	f	class:BinaryReader
+~CANSession	CANSession.cpp	/^    CANSession::~CANSession()$/;"	f	class:android::CANSession
+~CommandObject	base/CommandObject.cpp	/^    CommandObject::~CommandObject()$/;"	f	class:android::CommandObject
+~ControllerObject	base/ControllerObject.cpp	/^    ControllerObject::~ControllerObject()$/;"	f	class:android::ControllerObject
+~EmojiMotion	base/CommandObject.cpp	/^    EmojiMotion::~EmojiMotion()$/;"	f	class:android::EmojiMotion
+~Frame	base/MotionFrames.h	/^            ~Frame()$/;"	f	class:MotionFrames::Frame
+~IFrameListener	base/IFrameListener.h	/^        virtual ~IFrameListener(){}$/;"	f	class:IFrameListener
+~Looper	RDService.cpp	/^    RDService::Looper::~Looper()$/;"	f	class:android::RDService::Looper
+~Looper	service/AdbForwardService.cpp	/^    AdbForwardService::Looper::~Looper()$/;"	f	class:android::AdbForwardService::Looper
+~MotionFrames	base/MotionFrames.h	/^        ~MotionFrames()$/;"	f	class:MotionFrames
+~MotionPlayer	service/MotionPlayer.cpp	/^    MotionPlayer::~MotionPlayer()$/;"	f	class:android::MotionPlayer
+~MotionService	service/MotionService.cpp	/^    MotionService::~MotionService()$/;"	f	class:android::MotionService
+~MotorMotion	base/CommandObject.cpp	/^    MotorMotion::~MotorMotion()$/;"	f	class:android::MotorMotion
+~PositionMotion	base/CommandObject.cpp	/^    PositionMotion::~PositionMotion()$/;"	f	class:android::PositionMotion
+~RDSTask	RDSTask.cpp	/^    RDSTask::~RDSTask()$/;"	f	class:android::RDSTask
+~RDService	RDService.cpp	/^    RDService::~RDService()$/;"	f	class:android::RDService
+~RawCommandService	service/RawCommandService.cpp	/^    RawCommandService::~RawCommandService()$/;"	f	class:android::RawCommandService
+~ResetMotion	base/CommandObject.cpp	/^    ResetMotion::~ResetMotion()$/;"	f	class:android::ResetMotion
+~ServiceObject	base/ServiceObject.cpp	/^    ServiceObject::~ServiceObject()$/;"	f	class:android::ServiceObject
+~SettingObject	base/CommandObject.cpp	/^    SettingObject::~SettingObject()$/;"	f	class:android::SettingObject
+~StopMotion	base/CommandObject.cpp	/^    StopMotion::~StopMotion()$/;"	f	class:android::StopMotion
+~SystemController	service/SystemController.cpp	/^    SystemController::~SystemController()$/;"	f	class:android::SystemController
