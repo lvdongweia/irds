@@ -54,7 +54,7 @@ int SystemController::prepare()
 }
 int SystemController::setMessageListener(sp<IMessageListener> listener)
 {
-	mListener = listener;
+    mListener = listener;
     if (systemController.get() != 0)  systemController->setMessageListener(listener);
     return 0;
 }
@@ -63,7 +63,19 @@ int SystemController::send(int to, int cmd, int arg1, int arg2, const sp<IComple
 {
     if (systemController.get() != 0) return systemController->send(to, cmd, arg1, arg2, onCompletionListener);
 
-    return -1;   
+    return -1;
+}
+int SystemController::setEnable(int deviceType, int deviceId, int enable, const sp<ICompletionListener> & onCompletionListener)
+{
+    if (systemController.get() != 0) return systemController->setEnable(deviceType, deviceId, enable, onCompletionListener);
+
+    return -1;
+}
+int SystemController::isEnable(int deviceType, int deviceId, const sp<ICompletionListener> & onCompletionListener)
+{
+    if (systemController.get() != 0) return systemController->isEnable(deviceType, deviceId, onCompletionListener);
+
+    return -1;
 }
 
 

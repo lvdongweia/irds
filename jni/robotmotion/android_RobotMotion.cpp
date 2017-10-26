@@ -40,7 +40,6 @@ static void * g_cache = NULL;
 static int g_cache_size = 0;
 
 
-
 // ----------------------------------------------------------------------------
 // ref-counted object for callbacks
 
@@ -78,12 +77,12 @@ public:
         JNIEnv *env = AndroidRuntime::getJNIEnv();
         if(mCallbackObject != 0)
         {
-			env->CallVoidMethod(mCallbackObject, fields.onCompletion, session_id, result, errorcode);
-			env->DeleteGlobalRef(mCallbackObject);
-			mCallbackObject = 0;
-		}
-		else
-			env->CallVoidMethod(mListenerObject, fields.onCompletion, session_id, result, errorcode);
+            env->CallVoidMethod(mCallbackObject, fields.onCompletion, session_id, result, errorcode);
+            env->DeleteGlobalRef(mCallbackObject);
+            mCallbackObject = 0;
+        }
+        else
+            env->CallVoidMethod(mListenerObject, fields.onCompletion, session_id, result, errorcode);
         return 0;
     }
 private:
@@ -111,14 +110,16 @@ public:
     }
     virtual int onCompletion(int id, int result)
     {
-		LOGE("###", "hcf onCompletion");
         if (fields.onResult == 0 || mListenerObject == 0)
         {
-			LOGE("###", "hcf fields.onResult == 0 || mListenerObject == 0");
+            LOGE("###", "fields.onResult == 0 || mListenerObject == 0");
             return 0;
         }
         JNIEnv *env = AndroidRuntime::getJNIEnv();
-		env->CallVoidMethod(mListenerObject, fields.onResult, id, result);
+        int angle = (short)((result & 0xFFFF0000) >> 16);
+        int direction = (signed char)((0xFF00 & result) >> 8);
+        int speed = (unsigned char)((0xFF & result));
+        env->CallVoidMethod(mListenerObject, fields.onResult, id, angle, direction, speed);
         return 0;
     }
 private:
@@ -276,7 +277,7 @@ static void android_motion_MotionService_native_init(JNIEnv *env)
     if (clazz == NULL) {
         return;
     }
-    fields.onResult = env->GetMethodID(clazz, "onCompleted", "(II)V");
+    fields.onResult = env->GetMethodID(clazz, "onCompleted", "(IIII)V");
 
     clazz = env->FindClass(MOTIONSERVICECLASS);
     if (clazz == NULL) {
@@ -333,7 +334,7 @@ static int android_motion_MotionService_stop(JNIEnv *env, jobject thiz, int sess
 }
 static int android_motion_MotionService_setting(JNIEnv *env, jobject thiz, int id, int cmd, int arg1, int arg2, jobject obj)
 {
-	GetMotionService(motionService, env, thiz);
+    GetMotionService(motionService, env, thiz);
     if(obj == NULL)
     {
          return motionService->setting(id, cmd, arg1, arg2, NULL);

@@ -11,6 +11,7 @@
 #include "ICompletionListener.h"
 #include "IMessageListener.h"
 #include "ISystemController.h"
+#include "IResultListener.h"
 
 using namespace android;
 
@@ -39,6 +40,8 @@ class SystemController : public RefBase
     public:
         virtual int setMessageListener(sp<IMessageListener> listener);
         virtual int send(int to, int cmd, int arg1, int arg2, const sp<ICompletionListener> & onCompletionListener);
+        virtual int setEnable(int deviceType, int deviceId, int enable, const sp<ICompletionListener> & onCompletionListener);
+        virtual int isEnable(int deviceType, int deviceId, const sp<ICompletionListener> & onCompletionListener);
 };
 
 #endif//

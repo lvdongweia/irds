@@ -19,6 +19,7 @@ namespace android
             int RmSerialiaztion();
             int RbSerialization();
             int RcSerialization();
+            int RfSerialization();
         public:
             virtual int  Send();
             virtual bool Equal(const CommandObject * obj);

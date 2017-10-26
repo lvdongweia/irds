@@ -142,6 +142,7 @@ namespace android
 
     int MotionPlayer::setDataSourceByStream(const unsigned char * bytes, int size)
     {
+        Mutex::Autolock lock(playLock);
         status = UNREADY;
         if (motionFrames != NULL)
         {

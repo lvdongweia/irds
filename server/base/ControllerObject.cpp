@@ -41,7 +41,11 @@ namespace android
         
         streams[0] = co_id;
 
-        if (target == 0x38)
+        if(target == 0x35)
+        {
+            RfSerialization();
+        }
+        else if (target == 0x38)
         {
             RbSerialization();
         }
@@ -196,7 +200,30 @@ namespace android
         }
         return 0;
     }
-
+    int ControllerObject::RfSerialization()
+    {
+        switch (co_id)
+        {
+            case RF_DISPLAY_ENABLE_CMD:
+            case RF_DISPLAY_EYE_ENABLE_CMD:
+            {
+                streams[1] = 4;//length
+                streams[2] = task_id;
+                streams[3] = arg1;
+            }
+            break;
+            case RF_DISPLAY_SWITCH_QUERY:
+            {
+                board_id = 0x30;
+                streams[1] = 3;//length
+                streams[2] = task_id;
+            }
+            break;
+            default:
+                return -1;
+        }
+        return 0;
+    }
     int ControllerObject::Run(int to, int cmd, int arg1, int arg2, const sp<ICompletionListener> & onCompletionListener)
     {
         this->co_id = cmd; 

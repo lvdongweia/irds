@@ -12,6 +12,7 @@
 #include "RDSTask.h"
 #include "RDService.h"
 #include "CANSession.h"
+#include "service/SystemController.h"
 #include "rm_message_defs.h"
 
 #undef LOG_TAG
@@ -103,10 +104,12 @@ namespace android
                     if (length == len)
                     {
                         int task_id = streams[2];
-                        int16_t angle = 0;
-                        angle = streams[3] | (streams[4] << 8);
-
-                        RDSTask::Instance()->onCommandCompletion(task_id, angle);
+                        int status = 0;
+                        status = streams[6];
+                        status |= ((streams[5] << 8) & 0xFF00);
+                        status |= ((streams[3] << 16) & 0xFF0000);
+                        status |= ((streams[4] << 24) & 0xFF000000);
+                        RDSTask::Instance()->onCommandCompletion(task_id, status);
                     }
                 }
                 break;
@@ -156,6 +159,7 @@ namespace android
                         uint8_t value = streams[4];
                         ReportEvent(RC_SENSOR_TYPE, event, value);
                     }
+
                     break;
                 }
             case RM_QUERY_MOTION_SAFE_STATUS_RESP:
@@ -244,7 +248,7 @@ namespace android
                 break;
             case RF_EVENT_REPORT:
                 {
-                    if(len > 3)
+                    if(len > 3 && SystemController::bTouchListener)
                     {
                         uint8_t event = streams[2];
                         uint8_t position = streams[3];
@@ -276,7 +280,7 @@ namespace android
                     Send(src_id, bytes, 2);
                     RDSTask::Instance()->onCommandCompletion(type, 0, 0x01);
                 }
-                break;
+                //break;
                 /* cmd, length == 2 */
             case COMMON_SYSCTRL_INIT_CMD:
             case RM_SYSCTRL_REGISTER_CMD:

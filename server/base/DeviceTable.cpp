@@ -33,15 +33,15 @@ namespace DeviceTable
         /* 0x0F */{ 0, 0 },     /* 保留 */
         /* 0x10 */{ 0, 0 },     /* 保留 */
         /////////////////////////////////////////////////////////////////////////////////////
-        /* 0x11 */{ 0, 0 },     /* 保留 */
-        /* 0x12 */{ 0, 0 },     /* 保留 */
+        /* 0x11 */{ WHEEL_LEFT, RB_BODY_MOTOR_CTRL_ID },     /* 左轮 */
+        /* 0x12 */{ WHEEL_RIGHT, RB_BODY_MOTOR_CTRL_ID },     /* 右轮 */
         /* 0x13 */{ WAIST_TILT, RB_BODY_MOTOR_CTRL_ID },                /* 腰_俯仰 */
         /* 0x14 */{ NECK_ROTATION, RB_BODY_MOTOR_CTRL_ID },             /* 脖子_旋转 */
         /* 0x15 */{ NECK_TILT, RB_BODY_MOTOR_CTRL_ID },                 /* 脖子_俯仰 */
         /* 0x16 */{ 0, 0 },     /* 保留 */
         /* 0x17 */{ 0, 0 },     /* 保留 */
-        /* 0x18 */{ WHEEL_LEFT, RB_BODY_MOTOR_CTRL_ID },                /* 左轮 */
-        /* 0x19 */{ WHEEL_RIGHT, RB_BODY_MOTOR_CTRL_ID },               /* 右轮 */
+        /* 0x18 */{ 0, 0 },                /* 保留 */
+        /* 0x19 */{ 0, 0 },               /* 保留 */
         /* 0x1A */{ 0, 0 },     /* 保留 */
         /* 0x1B */{ 0, 0 },     /* 保留 */
         /* 0x1C */{ 0, 0 },     /* 保留 */
@@ -288,7 +288,7 @@ namespace DeviceTable
     
     static const unsigned char AllMotor[] = 
     {
-        0x01, 0x02, 0x03, 0x04, 0x05, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x13, 0x14, 0x15, 0x18, 0x19, 0x00
+        0x01, 0x02, 0x03, 0x04, 0x05, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x13, 0x14, 0x15, 0x11, 0x12, 0x00
     };
 	static const unsigned char AllArmMotor[] = 
     {

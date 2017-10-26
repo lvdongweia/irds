@@ -56,7 +56,7 @@ namespace android
         {
 		    return cmd_count;
         }
-        if (sender_id > 0 && callback.get() == 0 && onResult.get() == 0)
+        if (callback.get() == 0 && onResult.get() == 0)
         {
             RDService::Instance()->notifyCommandCompleted(sender_id, task_session_id, result, errorcode);
         }
@@ -441,7 +441,7 @@ namespace android
         streams[0] = motion_id;
         streams[1] = 4;
         streams[2] = task_id;
-        streams[3] = 1; 
+        streams[3] = (flags == 0x03 ? 0 : 1);
         /*
         streams[0] = task_type_id;
         streams[1] = 6;
@@ -527,7 +527,7 @@ namespace android
         }
         else
         {
-            timeout = (val == 0xAAAA) ? -1 : 1000 * 60;
+            timeout = (val == 0xAAAA) ? 1000 * 30 : 1000 * 60;
             len = 8;
         }
         streams[0] = act_id; //type //move/turn
@@ -538,7 +538,7 @@ namespace android
         streams[5] = (unsigned char)((val & 0xFF00) >> 8); //angle/distance
         streams[6] = (unsigned char)speed; //speed   
         streams[7] = 0; //
-        //LOGE("###", "send position--> dis:%d low:%d hight:%d", distance, streams[4], streams[5]);
+        //LOGE("###", "send position--> act_id:%d, dis:%d low:%d hight:%d", act_id, distance, streams[4], streams[5]);
 
         CommandObject::Send();
         return 0;

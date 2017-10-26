@@ -121,6 +121,7 @@ namespace android
     } 
     void RDService::Main()
     {
+        SystemController::checkAllListener();
         looper = new Looper();
         looper->run("rds main looper");
 
@@ -185,6 +186,7 @@ namespace android
                 (*iter)->onCompletion(session_id, result, errorcode);
             }
         }
+
     }
     void RDService::notifyMessage(int from, int what, int arg1, int arg2)
     {
